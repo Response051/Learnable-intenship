@@ -8,8 +8,8 @@ psuedocode
 */
 let welcome = alert("welcome to Response Store")
 let checkOut = function(checkout) {
-  checkout = prompt("Are You sure? :,")
-  let confirmation = ["Yes", "No"]
+  checkout = prompt("Are You sure ? :")
+  let confirmation = ["yes", "no"]
   if (checkout == confirmation[0]) {
     console.log("Checkout!, you can now Proceed to Payment!")
   } else if (checkout == confirmation[1]) {
@@ -24,8 +24,8 @@ let checkOut = function(checkout) {
 //  this is to be retuned to be returned at the list() section on ,assuming the person chose electronics.i.e itemA
 let electronics = function(needItemA) {
   needItemA = prompt("what kind of electronics do you need bro ?",)
-  let electronic = ["TV", "Radio", "Fan"]
-  if (needItemA == electronic[0] || electronic[1] || electronic[2]) {
+  let electronic = ["tv", "radio", "fan"]
+  if (needItemA == electronic[0] || needItemA == electronic[1] || needItemA == electronic[2]) {
     return checkOut()
   } else {
     console.log("SORRY We dont have it")
@@ -35,16 +35,18 @@ let electronics = function(needItemA) {
 let furniture = function(needItemB) {
   needItemB = prompt("what kind of furniture do you need bro ?",)
   let furniture = ["chair", "table", "foam"]
-  if (needItemB == furniture[0] || furniture[1] || furniture[2]) { return checkOut() } else {
+  if (needItemB == furniture[0] || needItemB == furniture[1] || needItemB == furniture[2]) {
+    return checkOut()
+  } else {
     console.log("SORRY, its out of stock")
   }
 }
 //  this is to be retuned to be returned at the list() section on ,assuming the person chose clothes.i.e itemC
 let clothes = function(needItemC) {
   needItemC = prompt("what kind of Clothing do you need bro ?",)
-  let clothing = ["Jean", "Suit", " T-Shirt"]
-  if (needItemC == clothing[0] || clothing[1] || clothing[2]) {
-    return checkOut()
+  let clothing = ["jean", "suit", " t-shirt"]
+  if (needItemC == clothing[0] || needItemC == clothing[1] || needItemC == clothing[2]) {
+    return checkOut();
   } else {
     console.log("SORRY We dont have it in stock")
   }

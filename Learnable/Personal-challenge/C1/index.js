@@ -1,3 +1,4 @@
+
 /*
 A function that takes 2 arguments, but returns true if the first argument (string),
 ends in the second argument(also a string).
@@ -10,3 +11,4 @@ function argument(a, b) {
   return a.endsWith(b);
 }
 console.log(argument("learnable", "able"));
+module.exports = { console }
