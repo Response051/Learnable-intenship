@@ -23,7 +23,8 @@ let checkOut = function(checkout) {
 }
 //  this is to be retuned to be returned at the list() section on ,assuming the person chose electronics.i.e itemA
 let electronics = function(needItemA) {
-  needItemA = prompt("what kind of electronics do you need bro ?",)
+  let messageA = alert(" We have tv; radio, and fan itmes for now")
+  needItemA = prompt("what kind of electronics do you need ?",)
   let electronic = ["tv", "radio", "fan"]
   if (needItemA == electronic[0] || needItemA == electronic[1] || needItemA == electronic[2]) {
     return checkOut()
@@ -33,7 +34,8 @@ let electronics = function(needItemA) {
 }
 //  this is to be retuned to be returned at the list() section on ,assuming the person chose furniture.i.e itemB
 let furniture = function(needItemB) {
-  needItemB = prompt("what kind of furniture do you need bro ?",)
+  let messageB = alert(" We have chair; table and foam section for now")
+  needItemB = prompt("what kind of furniture do you need ?",)
   let furniture = ["chair", "table", "foam"]
   if (needItemB == furniture[0] || needItemB == furniture[1] || needItemB == furniture[2]) {
     return checkOut()
@@ -43,7 +45,8 @@ let furniture = function(needItemB) {
 }
 //  this is to be retuned to be returned at the list() section on ,assuming the person chose clothes.i.e itemC
 let clothes = function(needItemC) {
-  needItemC = prompt("what kind of Clothing do you need bro ?",)
+  let messageC = alert(" We have jean; suit and t-shirt for now")
+  needItemC = prompt("what kind of Clothing do you need ?",)
   let clothing = ["jean", "suit", " t-shirt"]
   if (needItemC == clothing[0] || needItemC == clothing[1] || needItemC == clothing[2]) {
     return checkOut();
@@ -51,7 +54,7 @@ let clothes = function(needItemC) {
     console.log("SORRY We dont have it in stock")
   }
 }
-
+let message = alert(" We have electronic; furniture and clothes section for now")
 let need = prompt("what do you need ? : ",)
 function list(need) {
   let itemA = "electronic"
