@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  border: 1px solid blue;
+  width: 100%;
+  margin: 1em auto;
+  padding: 2em;
+  font-size: clamp(1rem, 1.8vh, 4rem);
+  /* font-size: 22px; */
+  background-color: aqua;
+}
+head h1 {
+  border: 2px solid red;
+  margin: 2em auto;
+  padding: 1em;
+}
